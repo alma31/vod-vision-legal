@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — TV VOD Vision</title>
+  <meta name="description" content="Privacy Policy for TV VOD Vision mobile application (iOS / Android)">
+  <style>
+    :root {
+      --accent: #5b4bec;
+      --text: #1a1a1a;
+      --muted: #666;
+      --bg: #ffffff;
+      --code-bg: #f3f3f7;
+      --border: #e5e5ea;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--bg);
+      -webkit-text-size-adjust: 100%;
+    }
+    h1 {
+      font-size: 2em;
+      margin-top: 0;
+      padding-bottom: 12px;
+      border-bottom: 3px solid var(--accent);
+    }
+    h2 {
+      color: var(--accent);
+      margin-top: 40px;
+      font-size: 1.35em;
+    }
+    h3 {
+      font-size: 1.1em;
+      margin-top: 24px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    .meta {
+      color: var(--muted);
+      font-size: 0.9em;
+    }
+    .lang-nav {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin: 28px 0;
+      flex-wrap: wrap;
+    }
+    .lang-nav a {
+      padding: 10px 20px;
+      border: 1.5px solid var(--accent);
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .lang-nav a:hover {
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+    }
+    code {
+      background: var(--code-bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+      font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    }
+    hr {
+      margin: 56px 0;
+      border: none;
+      border-top: 1px solid var(--border);
+    }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 6px; }
+    strong { color: var(--text); }
+    .highlight-none {
+      display: inline-block;
+      background: #e8f5e9;
+      color: #1b5e20;
+      padding: 2px 10px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 0.9em;
+    }
+    footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9em;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Privacy Policy — TV VOD Vision</h1>
+  <p class="meta">Dernière mise à jour / Last updated: <strong>April 19, 2026</strong></p>
+
+  <div class="lang-nav">
+    <a href="#fr">Français</a>
+    <a href="#en">English</a>
+  </div>
+
+  <hr>
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- FRANÇAIS                                                         -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <section id="fr">
+
+    <h1>Politique de confidentialité</h1>
+
+    <h2>1. Qui nous sommes</h2>
+    <p>
+      TV VOD Vision est une application mobile de surveillance personnelle de catalogues
+      multimédias, disponible sur iOS et Android.
+    </p>
+    <ul>
+      <li><strong>Identifiant de l'application</strong> : <code>fr.lexi.tvvodvision</code></li>
+      <li><strong>Contact</strong> : <a href="mailto:tvvodvision@proton.me">tvvodvision@proton.me</a></li>
+    </ul>
+
+    <h2>2. Données que nous collectons</h2>
+    <p>
+      <span class="highlight-none">AUCUNE</span>
+    </p>
+    <p>
+      L'application ne collecte, ne transmet et ne stocke aucune donnée personnelle sur
+      des serveurs contrôlés par le développeur.
+    </p>
+
+    <h2>3. Données stockées localement sur votre appareil</h2>
+    <p>Les données suivantes sont stockées exclusivement sur votre appareil et ne quittent jamais celui-ci :</p>
+    <ul>
+      <li>
+        <strong>Identifiants de serveurs multimédias</strong> : chiffrés via le Keychain
+        (iOS, protégé par la Secure Enclave) ou EncryptedSharedPreferences AES-256-GCM
+        (Android). La base SQLite locale ne contient que des placeholders <code>***</code>.
+      </li>
+      <li>
+        <strong>Favoris</strong> : liste des films et séries que vous suivez,
+        enregistrée dans une base de données SQLite locale.
+      </li>
+      <li>
+        <strong>Préférences</strong> : langues acceptées, réglages d'affichage,
+        paramètres de surveillance.
+      </li>
+    </ul>
+
+    <h2>4. Communications avec des services tiers</h2>
+    <p>L'application communique uniquement avec les services suivants :</p>
+
+    <h3>4.1 TMDB (The Movie Database)</h3>
+    <ul>
+      <li>Domaines : <code>api.themoviedb.org</code>, <code>image.tmdb.org</code></li>
+      <li>Finalité : récupération des métadonnées publiques (titres, affiches, descriptions, dates) des films et séries</li>
+      <li>Aucune donnée personnelle n'est transmise à TMDB</li>
+      <li>Communication en HTTPS uniquement</li>
+    </ul>
+
+    <h3>4.2 Vos serveurs multimédias personnels</h3>
+    <ul>
+      <li>Domaines : ceux que vous configurez manuellement dans l'application</li>
+      <li>Finalité : requêtes API (type Xtream Codes) pour vérifier la disponibilité de vos contenus favoris</li>
+      <li>Vous êtes l'unique propriétaire et responsable de ces serveurs</li>
+      <li>Le développeur n'a aucun contrôle ni accès à ces serveurs</li>
+    </ul>
+
+    <h3>4.3 Firebase Cloud Messaging (Google)</h3>
+    <ul>
+      <li>Domaine : <code>fcm.googleapis.com</code></li>
+      <li>Finalité : réception de notifications push anonymes pour déclencher des vérifications en arrière-plan</li>
+      <li>Un jeton FCM anonyme est généré par Google ; aucune information sur vos favoris, serveurs ou utilisation n'est transmise</li>
+      <li>Consulter la politique de confidentialité de Google : <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+    </ul>
+
+    <h2>5. Analytics et suivi</h2>
+    <p><span class="highlight-none">AUCUN</span></p>
+    <p>L'application n'intègre aucun outil de suivi :</p>
+    <ul>
+      <li>Pas de Google Analytics, Firebase Analytics ou équivalents</li>
+      <li>Pas de Crashlytics ni autre système de reporting automatisé</li>
+      <li>Pas de publicité (AdMob, etc.)</li>
+      <li>Pas de suivi comportemental</li>
+      <li>Pas d'identifiants publicitaires (IDFA, AAID)</li>
+    </ul>
+
+    <h2>6. Vos droits (RGPD)</h2>
+    <p>
+      L'intégralité de vos données étant stockée localement sur votre appareil,
+      vous disposez d'un contrôle total :
+    </p>
+    <ul>
+      <li><strong>Accès</strong> : consultation directe via l'application</li>
+      <li><strong>Suppression</strong> : désinstaller l'application supprime intégralement l'ensemble des données</li>
+      <li><strong>Rectification</strong> : modification directe via l'application</li>
+      <li><strong>Portabilité</strong> : non applicable (aucune donnée sur serveur externe contrôlé par le développeur)</li>
+      <li><strong>Droit d'opposition</strong> : aucun traitement automatisé effectué par le développeur</li>
+    </ul>
+
+    <h2>7. Sécurité</h2>
+    <ul>
+      <li>Identifiants de serveurs chiffrés via les mécanismes natifs du système d'exploitation (Secure Enclave sur iOS, Android Keystore)</li>
+      <li>Communications TMDB et Firebase forcées en HTTPS (via <code>NSExceptionDomains</code> sur iOS)</li>
+      <li>Les requêtes vers vos serveurs personnels utilisent le protocole configuré par votre fournisseur (HTTP ou HTTPS)</li>
+      <li>Aucun stockage cloud : vos données ne quittent jamais votre appareil</li>
+    </ul>
+
+    <h2>8. Enfants</h2>
+    <p>
+      L'application n'est pas destinée aux enfants de moins de 13 ans. Nous ne collectons
+      sciemment aucune donnée d'enfant.
+    </p>
+
+    <h2>9. Modifications de cette politique</h2>
+    <p>
+      Toute modification significative sera indiquée par la mise à jour de la date
+      figurant en haut de cette page. Nous vous encourageons à consulter régulièrement
+      cette politique.
+    </p>
+
+    <h2>10. Contact</h2>
+    <p>
+      Pour toute question ou réclamation concernant cette politique de confidentialité :
+    </p>
+    <ul>
+      <li>Email : <a href="mailto:tvvodvision@proton.me">tvvodvision@proton.me</a></li>
+    </ul>
+
+  </section>
+
+  <hr>
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- ENGLISH                                                          -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <section id="en">
+
+    <h1>Privacy Policy</h1>
+
+    <h2>1. Who we are</h2>
+    <p>
+      TV VOD Vision is a mobile application for personal media catalog monitoring,
+      available on iOS and Android.
+    </p>
+    <ul>
+      <li><strong>App bundle ID</strong>: <code>fr.lexi.tvvodvision</code></li>
+      <li><strong>Contact</strong>: <a href="mailto:tvvodvision@proton.me">tvvodvision@proton.me</a></li>
+    </ul>
+
+    <h2>2. Data we collect</h2>
+    <p>
+      <span class="highlight-none">NONE</span>
+    </p>
+    <p>
+      The application does not collect, transmit or store any personal data on servers
+      controlled by the developer.
+    </p>
+
+    <h2>3. Data stored locally on your device</h2>
+    <p>The following data is stored exclusively on your device and never leaves it:</p>
+    <ul>
+      <li>
+        <strong>Media server credentials</strong>: encrypted via the iOS Keychain
+        (protected by the Secure Enclave) or EncryptedSharedPreferences AES-256-GCM
+        on Android. The local SQLite database only contains <code>***</code> placeholders.
+      </li>
+      <li>
+        <strong>Favorites</strong>: list of movies and TV shows you track,
+        stored in a local SQLite database.
+      </li>
+      <li>
+        <strong>Preferences</strong>: accepted languages, display settings,
+        monitoring preferences.
+      </li>
+    </ul>
+
+    <h2>4. Third-party service communications</h2>
+    <p>The application only communicates with the following services:</p>
+
+    <h3>4.1 TMDB (The Movie Database)</h3>
+    <ul>
+      <li>Domains: <code>api.themoviedb.org</code>, <code>image.tmdb.org</code></li>
+      <li>Purpose: fetching public metadata (titles, posters, descriptions, dates) for movies and TV shows</li>
+      <li>No personal data is transmitted to TMDB</li>
+      <li>HTTPS communication only</li>
+    </ul>
+
+    <h3>4.2 Your personal media servers</h3>
+    <ul>
+      <li>Domains: those you manually configure in the application</li>
+      <li>Purpose: API requests (e.g. Xtream Codes) to check the availability of your favorite content</li>
+      <li>You are the sole owner and operator of these servers</li>
+      <li>The developer has no control or access to these servers</li>
+    </ul>
+
+    <h3>4.3 Firebase Cloud Messaging (Google)</h3>
+    <ul>
+      <li>Domain: <code>fcm.googleapis.com</code></li>
+      <li>Purpose: receiving anonymous push notifications to trigger background checks</li>
+      <li>An anonymous FCM token is generated by Google; no information about your favorites, servers, or usage is transmitted</li>
+      <li>See Google's privacy policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+    </ul>
+
+    <h2>5. Analytics and tracking</h2>
+    <p><span class="highlight-none">NONE</span></p>
+    <p>The application does not integrate any tracking tool:</p>
+    <ul>
+      <li>No Google Analytics, Firebase Analytics or equivalent</li>
+      <li>No Crashlytics or automated reporting</li>
+      <li>No advertising (AdMob, etc.)</li>
+      <li>No behavioral tracking</li>
+      <li>No advertising identifiers (IDFA, AAID)</li>
+    </ul>
+
+    <h2>6. Your rights (GDPR)</h2>
+    <p>
+      Since all your data is stored locally on your device, you have full control:
+    </p>
+    <ul>
+      <li><strong>Access</strong>: direct consultation via the application</li>
+      <li><strong>Deletion</strong>: uninstalling the application completely removes all data</li>
+      <li><strong>Rectification</strong>: direct modification via the application</li>
+      <li><strong>Portability</strong>: not applicable (no data on external servers controlled by the developer)</li>
+      <li><strong>Right to object</strong>: no automated processing performed by the developer</li>
+    </ul>
+
+    <h2>7. Security</h2>
+    <ul>
+      <li>Server credentials encrypted via native OS security mechanisms (iOS Secure Enclave, Android Keystore)</li>
+      <li>TMDB and Firebase communications forced to HTTPS (via <code>NSExceptionDomains</code> on iOS)</li>
+      <li>Requests to your personal servers use the protocol configured by your provider (HTTP or HTTPS)</li>
+      <li>No cloud storage: your data never leaves your device</li>
+    </ul>
+
+    <h2>8. Children</h2>
+    <p>
+      The application is not intended for children under 13. We do not knowingly collect
+      any data from children.
+    </p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>
+      Any significant modification will be indicated by updating the date at the top
+      of this page. We encourage you to review this policy regularly.
+    </p>
+
+    <h2>10. Contact</h2>
+    <p>
+      For any question or complaint regarding this privacy policy:
+    </p>
+    <ul>
+      <li>Email: <a href="mailto:tvvodvision@proton.me">tvvodvision@proton.me</a></li>
+    </ul>
+
+  </section>
+
+  <footer>
+    TV VOD Vision &middot; <a href="mailto:tvvodvision@proton.me">tvvodvision@proton.me</a>
+  </footer>
+
+</body>
+</html>
