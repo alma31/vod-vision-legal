@@ -105,7 +105,7 @@
 <body>
 
   <h1>Privacy Policy — TV VOD Vision</h1>
-  <p class="meta">Dernière mise à jour / Last updated: <strong>April 19, 2026</strong></p>
+  <p class="meta">Dernière mise à jour / Last updated: <strong>May 8, 2026</strong></p>
 
   <div class="lang-nav">
     <a href="#fr">Français</a>
@@ -185,6 +185,23 @@
       <li>Consulter la politique de confidentialité de Google : <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
     </ul>
 
+    <h3>4.4 RevenueCat (gestion des achats intégrés)</h3>
+    <ul>
+      <li>Domaine : <code>api.revenuecat.com</code></li>
+      <li>Finalité : valider l'abonnement Premium ou l'achat à vie, et permettre la restauration des achats sur plusieurs appareils liés au même Apple ID</li>
+      <li>RevenueCat reçoit un identifiant utilisateur anonyme aléatoire généré au premier lancement, ainsi que les jetons de validation transmis par Apple App Store. Aucune donnée personnelle n'est partagée (pas de nom, email, ni informations de paiement)</li>
+      <li>La facturation est gérée intégralement par Apple : aucune information bancaire ne transite par RevenueCat ni par l'application</li>
+      <li>Consulter la politique de confidentialité de RevenueCat : <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></li>
+    </ul>
+
+    <h3>4.5 Apple App Store (paiements)</h3>
+    <ul>
+      <li>Finalité : traitement des paiements pour les achats intégrés (abonnement annuel ou achat à vie Premium)</li>
+      <li>Apple gère seul l'ensemble du processus de paiement : ni RevenueCat, ni l'éditeur de l'application n'ont accès à vos informations bancaires ou à votre Apple ID</li>
+      <li>L'éditeur reçoit uniquement, via App Store Connect, des rapports de revenus agrégés et anonymisés (pas d'identification individuelle)</li>
+      <li>Politique de confidentialité d'Apple : <a href="https://www.apple.com/legal/privacy">apple.com/legal/privacy</a></li>
+    </ul>
+
     <h2>5. Analytics et suivi</h2>
     <p><span class="highlight-none">AUCUN</span></p>
     <p>L'application n'intègre aucun outil de suivi :</p>
@@ -212,7 +229,7 @@
     <h2>7. Sécurité</h2>
     <ul>
       <li>Identifiants de serveurs chiffrés via les mécanismes natifs du système d'exploitation (Secure Enclave sur iOS, Android Keystore)</li>
-      <li>Communications TMDB et Firebase forcées en HTTPS (via <code>NSExceptionDomains</code> sur iOS)</li>
+      <li>Communications TMDB, Firebase, RevenueCat et Apple forcées en HTTPS (via <code>NSExceptionDomains</code> sur iOS)</li>
       <li>Les requêtes vers vos serveurs personnels utilisent le protocole configuré par votre fournisseur (HTTP ou HTTPS)</li>
       <li>Aucun stockage cloud : vos données ne quittent jamais votre appareil</li>
     </ul>
@@ -313,6 +330,23 @@
       <li>See Google's privacy policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
     </ul>
 
+    <h3>4.4 RevenueCat (in-app purchase management)</h3>
+    <ul>
+      <li>Domain: <code>api.revenuecat.com</code></li>
+      <li>Purpose: validate Premium subscription or lifetime purchase, and enable purchase restoration across multiple devices linked to the same Apple ID</li>
+      <li>RevenueCat receives a randomly generated anonymous user identifier and the validation receipts forwarded by Apple App Store. No personal data is shared (no name, email, or payment information)</li>
+      <li>Billing is handled entirely by Apple: no banking information passes through RevenueCat or the application</li>
+      <li>See RevenueCat's privacy policy: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></li>
+    </ul>
+
+    <h3>4.5 Apple App Store (payments)</h3>
+    <ul>
+      <li>Purpose: processing payments for in-app purchases (annual subscription or lifetime Premium purchase)</li>
+      <li>Apple handles the entire payment process alone: neither RevenueCat nor the app developer has access to your banking information or Apple ID</li>
+      <li>The developer only receives aggregated and anonymized revenue reports via App Store Connect (no individual identification)</li>
+      <li>Apple's privacy policy: <a href="https://www.apple.com/legal/privacy">apple.com/legal/privacy</a></li>
+    </ul>
+
     <h2>5. Analytics and tracking</h2>
     <p><span class="highlight-none">NONE</span></p>
     <p>The application does not integrate any tracking tool:</p>
@@ -339,7 +373,7 @@
     <h2>7. Security</h2>
     <ul>
       <li>Server credentials encrypted via native OS security mechanisms (iOS Secure Enclave, Android Keystore)</li>
-      <li>TMDB and Firebase communications forced to HTTPS (via <code>NSExceptionDomains</code> on iOS)</li>
+      <li>TMDB, Firebase, RevenueCat and Apple communications forced to HTTPS (via <code>NSExceptionDomains</code> on iOS)</li>
       <li>Requests to your personal servers use the protocol configured by your provider (HTTP or HTTPS)</li>
       <li>No cloud storage: your data never leaves your device</li>
     </ul>
